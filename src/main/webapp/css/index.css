@@ -1,0 +1,117 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Feb 14, 2023, 9:25:38 AM
+    Author     : student#1c16160e
+*/
+
+
+
+
+#form-box{
+    
+   margin-top:5%;
+    padding: 20px;
+    
+    
+}
+
+#form-box table{
+    
+   border: 1px solid black;
+   border-radius: 10px;
+   padding: 10px;
+    box-shadow: 0px 0px 5px 0px grey;
+    
+}
+
+#form-box table td{
+    
+   border: none;
+    
+    
+}
+
+#form-box  [type=text]{
+    font-family: 'Comfortaa', cursive;
+    font-size: 1.5rem;
+    border: none;
+    background-color: transparent;
+    border-bottom: 2px grey solid;
+    transition-duration: 0.5s;
+    max-width: 200px;
+      
+     
+}
+
+#form-box  [type=text]:focus{
+    border: none;
+border-bottom: 2px red solid;
+background-color: #d9d9d9;
+
+     
+}
+
+
+
+#form-box  [type=password]{
+    
+    font-family: 'Comfortaa', cursive;
+    font-size: 1rem;
+    border: none;
+    background-color: transparent;
+    border-bottom: 2px grey solid;
+    transition-duration: 0.5s;
+     max-width: 200px;
+      
+}
+
+#form-box  [type=password]:focus{
+     border: none;
+border-bottom: 2px red solid;
+background-color: #d9d9d9;
+     
+      
+}
+
+.user-info{
+    font-weight: bold;
+    color: black;
+    font-size:1.5rem;
+    
+}
+
+
+#btn-login[type=submit]{
+    
+    background-color: transparent;
+    font-family: 'Comfortaa', cursive;
+    font-weight: bold;
+    font-size: 20px;
+    color: black;
+    height: 3rem;
+    width: 8rem;
+    padding: 10px;
+    
+    
+    border: none;
+    border-bottom: 2px grey solid;
+    border-radius: 10px;
+    box-shadow: 0px 0px 3px 0px grey;
+    
+    transition-duration: 0.5s;
+   
+    
+    
+    
+}
+
+#btn-login[type=submit]:hover{
+    
+cursor: pointer;
+background-color: #d9d9d9;
+border-bottom: 2px red solid;
+}

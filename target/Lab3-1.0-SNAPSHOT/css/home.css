@@ -1,0 +1,136 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Feb 14, 2023, 10:51:46 AM
+    Author     : student
+*/
+
+
+
+.food-card{
+    
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 20px;
+    max-width: 400px;
+    max-height: 200px;
+    
+    opacity:0;
+    transition-duration: 0.5s;
+    animation: fade-in 2s ease-in-out forwards;
+    animation-delay: 0.5s;
+    
+    border: 2px solid black;
+    border-radius: 10px;
+}
+
+
+.food-card:hover{
+    
+    cursor: pointer;
+    background-color: #d9d9d9;
+}
+
+.food-card-prop{
+    
+    display: flex;
+    flex-direction: column;
+   align-content: start ;
+}
+
+.food-card img{
+    mix-blend-mode: multiply;
+    margin-left: 2rem;
+    max-height: 100px;
+    max-width: 100px;
+    
+}
+
+
+input[type=submit]{
+    
+    background-color: transparent;
+    font-family: 'Comfortaa', cursive;
+    font-weight: bold;
+    font-size: 20px;
+    color: black;
+    height: 3rem;
+    width: 8rem;
+    padding: 10px;
+    border: none;
+    
+    border-bottom: 2px grey solid;
+    border-radius: 10px;
+    box-shadow: 0px 0px 3px 0px grey;
+    
+    opacity: 0;
+    transition-duration: 1s;
+    animation: fade-in 2s ease-in-out forwards;
+    animation-delay: 1s;
+   
+}
+
+[type=submit]:hover{
+    
+cursor: pointer;
+background-color: #d9d9d9;
+border-bottom: 2px red solid;
+}
+
+.container h2 {
+    
+    font-size: 40px;
+    
+    animation: fade-in 2s ease-in-out forwards;
+    
+}
+
+@keyframes fade-in{
+    
+    0%{opacity:0}
+    100%{opacity:1}
+    
+}
+
+.container  input[type=text]{
+    margin-right: 20px;
+    font-family: 'Comfortaa', cursive;
+    font-size: 1.5rem;
+    border: none;
+    background-color: transparent;
+    border-bottom: 2px grey solid;
+    
+    opacity: 0;
+    transition-duration: 0.5s;
+    animation: fade-in 2s ease-in-out forwards;
+    animation-delay: 1s;
+      
+     
+}
+
+.container input[type=text]:focus{
+border-bottom: 2px red solid;
+background-color: #d9d9d9;
+}
+
+.list-items{
+    
+   
+   list-style: none;
+   display:grid;
+  grid-template-columns: repeat(3 ,400px); 
+  column-gap: 15px;
+  row-gap:15px;
+ 
+}
+
+#firstDiv{
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
